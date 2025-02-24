@@ -106,7 +106,7 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 👨‍💻 Author
 **Mausam Kar**  
-[GitHub](https://github.com/your-username)  
+[GitHub](https://github.com/Mausam5055/)  
 Contributions & suggestions welcome! 🚀
 
 ---
