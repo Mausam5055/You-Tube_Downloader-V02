@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>YouTube Downloader</title>  <!-- Removed emoji if not needed -->
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <!-- Loading Screen -->
+        <div id="loading-screen">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+
+        <!-- Background Video -->
+        <div class="background">
+            <video id="background-video" autoplay loop muted>
+                <source src="{{ url_for('static', filename='background.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Main Container -->
+        <div class="container">
+            <header>
+                <img src="{{ url_for('static', filename='icon.png') }}" alt="App Logo" class="logo">
+                <h1>YouTube Video Downloader</h1>
+            </header>
+            
+            <!-- URL Input -->
+            <input type="text" id="url" placeholder="Enter YouTube Video URL">
+            
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="download-btn" class="animated-btn">Download Video</button>
+                <button id="mp3-btn" class="animated-btn">Download MP3</button>
+            </div>
+
+            <!-- Progress Bar -->
+            <div id="progress">
+                <div id="progress-bar"></div>
+            </div>
+
+            <!-- Status Message -->
+            <p id="status-message"></p>
+
+            <!-- Watermark -->
+            <div class="watermark">
+                <p>&copy; 2025 Mausam Kar. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
